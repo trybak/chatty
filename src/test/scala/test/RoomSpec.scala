@@ -9,8 +9,6 @@ import scala.language.postfixOps
 
 class TestConnection(user: User, room: ActorRef) extends Connection(user, room) {
   override def messageReceived(content: String, from: User): Unit = {}
-
-  override def userJoined(user: User): Unit = {}
 }
 
 class RoomSpec extends UnitSpec {

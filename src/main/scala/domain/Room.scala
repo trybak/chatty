@@ -9,7 +9,7 @@ import scala.collection.mutable
   *
   * This chat room supports duplicate joins, but expects a unique combination of user and connection.
   */
-class Room extends Actor {
+class Room(val name: String) extends Actor {
   private val members = mutable.Set[(User, ActorRef)]()
 
   override def receive = {

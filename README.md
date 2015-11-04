@@ -8,3 +8,5 @@ Steps
 - make sure you have sbt
 - run sbt in root directory
 - execute test task to run the tests
+- Run service.Application to start a server on localhost:8080
+- Post to localhost:8080/connection with parameter username and room, both strings, to create a connection
