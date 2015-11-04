@@ -17,7 +17,7 @@ class RoomSpec extends UnitSpec {
     system.terminate()
   }
 
-  val room = system.actorOf(Props(classOf[Room]))
+  val room = system.actorOf(Props(classOf[Room], "room"))
   val user1 = User("user1")
   val connection1 = system.actorOf(Props(classOf[TestConnection], user1, room))
   val user2 = User("user2")
